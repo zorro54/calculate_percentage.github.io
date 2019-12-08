@@ -1,0 +1,40 @@
+body {
+  background-image:url(texture_newspaper.jpeg);
+  font-family: 'Droid Serif', serif;
+}
+#journal {
+    font-family: 'Playfair Display', serif;
+    font-size: 5vmax;
+    font-weight: bold;
+    text-align: center;
+    color: #FF5733;
+}
+
+#article {
+    font-size: 3vmax;
+    color: #000000;
+    text-align: center;
+}
+#sous-titre {
+    font-size: 1.5vmax;
+    color: #000000;
+    text-align: center;
+    font-style:italic;
+}
+#contenu{
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+p span.intro{
+    font-size: 2vmax;
+    font-style: italic;
+}
+p span.question{
+    font-weight: bold;
+    font-size: 2vmax;
+}
+p span.reponse{
+    font-size: 1.7vmax;
+}
