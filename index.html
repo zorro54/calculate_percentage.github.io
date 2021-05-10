@@ -1,80 +1,188 @@
+<!--Modelo de ficha (HTML)-->
+<!--Se trata de una plantilla para la elaboración de una ficha de análisis de una película o serie para el proyecto Interfaces Imaginadas-->
+<!--Sections Navigator -->
 <!DOCTYPE html>
-<html >
+
+<html>
 <head>
-    <meta charset="utf-8">
-    
-      <title>CEN - UXPin Preview</title>
-    
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+ <link rel="stylesheet" type="text/css" href="style-2.css">
+ <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Playfair Display SC' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-
-    <link rel="apple-touch-icon" href="data/preview.uxpincdn.com_img_ios-logo-180x180-4f260175.png">
-    <link rel="icon" type="image/png" href="data/preview.uxpincdn.com_img_favicon-2d194bee.ico">
-    <link rel="icon" sizes="180x180" href="data/preview.uxpincdn.com_img_ios-logo-180x180-4f260175.png">
-    <link rel="shortcut icon" href="data/preview.uxpincdn.com_img_favicon-2d194bee.ico">
-
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-
-    
-
-    <link rel="stylesheet" href="data/preview.uxpincdn.com_styles_preview-eca27cbf.css">
-    
-
-    
-    <!-- auto-generated on export -->
-    <link rel="stylesheet" href="data/fonts.css">
-
-    
-    
 </head>
 
+<body>
+<nav id="top">
+  <a href="#Sinopsis">Sinopsis</a> |
+  <a href="#Necesidades">Necesidades</a> |
+  <a href="#Tecnologias">Tecnologías</a> |
+  <a href="#Impacto">Impacto</a> |
+  <a href="#Referencias">Referencias</a>
+</nav>
+<!--Sinopsis-->
+<div class="section" id="Sinopsis">
+  <h2 class="section_title">Sinopsis</h2>
+  <p class="section_text">
+    Lorem ipsum dolor sit amet, quo essent civibus ad. Cu eam dolorum omittantur, vix id paulo platonem, laudem intellegam sea an. Ut amet percipit ius, volumus platonem omittantur usu ad, eu virtute appetere persecuti his. Et utinam conceptam repudiandae vim, vel ut ipsum dicat. Detracto nominavi electram an mei, nam an minim animal eloquentiam, alia libris bonorum usu an. 
+  </p>
+   <p><div class="to_top"><a href="#top">▲</a></div></p> 
+</div>
 
-<body ng-controller="HomeController"
-      class="loading" ng-class="{
-        'loading' : isLoading,
-        'left-panel-active' : isPanelVisible(PREVIEW_PANELS.SITEMAP),
-        'sitemap-visible' : isPanelVisible(PREVIEW_PANELS.SITEMAP),
-        
-      }"
-      ng-keydown="keyDown($event)">
+
+<!--Necesidades-->
+<div class="section" id="Necesidades">
+  <h2 class="section_title">Necesidades</h2>
+  <p class="section_text">Eros nulla laboramus ei mea. His error omittantur et. Usu ei posse choro consulatu, est delicata percipitur id. Pro no inani iriure conceptam. Enim disputationi vix ex, his ne deleniti perpetua periculis, meliore signiferumque est ut.</p> 
+  
+  
+  <div class="need">
+    <hr class="separador" />
+    <h3 class="need_title main">Dispositivo (Interfaz/tecnología):</h3><h2 class="need_value main">Gadget 1</h2>
+    <h3 class="need_title">Primera Aparición:</h3><p class="need_value"> 23:36</p>
+    <h3 class="need_title">Necesidad:</h3> <p class="need_value">Nulla homero moderatius ut eum, dolores nominati sea eu. Lorem praesent in vel, ius et solet cetero. Ea duo mundi iisque, vix legere dissentias et, est omnes melius ad. Iuvaret postulant eu eam, te offendit constituam pro. Qui et putent noster vivendo, ea duo cibo dolorum, augue constituam inciderint vis ne. Inani tollit an quo, mei alia elit cetero ea, ut est laoreet philosophia.</p>
     
-    <div ui-view="topBar"></div>
-
-    <div ui-view></div>
-    <div ui-view="sitemap"></div>
-    <div ui-view="documentation"></div>
-    <div ui-view="canvas"></div>
-    <div ui-view="overlay"></div>
-    <div class="loader"></div>
-
-
-    <script type="text/javascript">
-    window.ApplicationConfiguration = {
-            awsLambdaExternalRequestUrl: 'https://qfgh9ucvol.execute-api.us-west-1.amazonaws.com/production/external_request',
-            project:{"id_project":8378909,"custom_font_css_url":"https://api.uxpin.com/fonts/custom/css/file?id=1043294","created_at":"2019-10-16T13:21:17+01:00","custom_fonts_url":"http://api.uxpin/fonts/custom/css/?id=1043294","features":{"live_share":true,"user_testing":false,"password":true,"team_comments":true,"spec_mode":true,"spec_mode_no_login":true,"spec_mode_styleguide":true,"comments_assignment":true,"design_views":false,"docs":true,"km_track":true,"merge":false},"hash":"0ca05eaa3c5b5e2669daf556ae5ce1c18aacb17a","id_account":1043294,"is_account_active":true,"is_account_parked":false,"is_account_free":false,"id_collection":2212565,"collection_type":"ONBOARDING_FIRST_PROJECT","collection_status":0,"id_original_project":null,"iteration_name":"","iteration_number":null,"name":"CEN","settings":{"grid":{"fixed_width_for_breakpoints":true,"resp0":{"cols_count":17,"col_width":63,"grid_on_top":true,"col_spacing":20,"fixed_width":true,"margin":20,"enabled":false,"width":1431}}},"type":"W","updated_at":"2019-10-18T15:36:42+01:00","variables":{}},
-            userData:{"is_trial":false,"is_anonymous":true,"is_owner":false},
-            mode: 'export',
-            menuEnabled:false,
-            modeMenuEnabled:false,
-        };
-         window._rollbarConfig = {};
-         window._rollbarInitialized = true;
-    </script>
-
+    <iframe  class="media" src="https://www.youtube.com/embed/718RDJeISNA" frameborder="0" allowfullscreen></iframe>
+  </div>
+  
+  
+  <div class="need">
+    <hr class="separador" />
+    <h3 class="need_title main">Dispositivo (Interfaz/tecnología):</h3><h2 class="need_value main">Gadget 2</h2>
+    <h3 class="need_title">Primera Aparición:</h3><p class="need_value"> 26:24</p>
+    <h3 class="need_title">Necesidad:</h3> <p class="need_value">Ut vix tamquam sadipscing, in verear labores assentior eum. Ea ullum detracto partiendo his. Ut novum quidam aliquid nam. Dolor laboramus nam ad..</p>
     
-        <script type="text/javascript" src="data/preview.uxpincdn.com_scripts_engine-75696acc.js"></script>
-        <script type="text/javascript" src="data/preview.uxpincdn.com_scripts_vendors-d053e8d7.js"></script>
-        <script type="text/javascript" src="data/preview.uxpincdn.com_scripts_app-69d506ae.js"></script>
-        
+    <!--Las imágenes se deben guardar en una carpeta con el nombre 
+    <título_de_la_película>-analisis 
+    o 
+    <título_de_la_serie>t<número de temporada>c<número de capítulo>-analisis 
+    -->
+    <img  class="media" src="la_pelicula-analisis/Screen_Shot.jpg">
+  </div>
+  
+  <div class="need">
+    <hr class="separador" />
+    <h3 class="need_title main">Dispositivo (Interfaz/tecnología):</h3><h2 class="need_value main">Gadget 3</h2>
+    <h3 class="need_title">Primera Aparición:</h3><p class="need_value"> 26:42</p>
+    <h3 class="need_title">Necesidad:</h3> <p class="need_value">Quaeque instructior nam no, brute vocibus an sit. Usu no modo fierent maluisset, et est tantas aliquam suscipiantur, quo verear tincidunt in. Tibique vituperata adversarium vis ne, mei mazim patrioque concludaturque ea. Ad duo mutat novum. Consul vidisse feugait per no, eum apeirian accommodare te. Ad dicta nulla convenire vim, ipsum ubique pro ea. Sit in mutat regione hendrerit.</p>
     
+    <iframe class="media" src="https://www.youtube.com/embed/2T1e9JN_O5Y" frameborder="0" allowfullscreen></iframe>
+  </div>
+  
+  <div class="need">
+    <hr class="separador" />
+    <h3 class="need_title main">Dispositivo (Interfaz/tecnología):</h3><h2 class="need_value main">Gadget 4</h2>
+    <h3 class="need_title">Primera Aparición:</h3><p class="need_value"> 27:45</p>
+    <h3 class="need_title">Necesidad:</h3> <p class="need_value">Nec legere forensibus ea. Eum scripta dissentiet et, atqui quando te eum. Est lucilius atomorum in, duo ne veniam ornatus. Ut nemore evertitur vim, cum aperiri sensibus maluisset no, omnis impedit instructior at eum. </p>
+    
+    <iframe  class="media" src="https://www.youtube.com/embed/xtbRen9RYx4?t=20s" frameborder="0" allowfullscreen></iframe>
+  </div>
+  
+  <div class="need">
+    <hr class="separador" />
+    <h3 class="need_title main">Dispositivo (Interfaz/tecnología):</h3><h2 class="need_value main">Gadget 5</h2>
+    <h3 class="need_title">Primera Aparición:</h3><p class="need_value"> 41:17</p>
+    <h3 class="need_title">Necesidad:</h3> <p class="need_value">Pri ut etiam eruditi voluptatibus. Eam quando graeco mandamus id, est id euismod abhorreant elaboraret. In vel tota tollit, ne eam primis graecis. Vel solet accusam scriptorem te. Homero denique sed te, nullam ignota an est.</p>
+    
+    <iframe  class="media" src="https://www.youtube.com/embed/O3MZYRAZJNk?t=2m6s" frameborder="0" allowfullscreen></iframe>
+  </div>
+  
+  <div class="need">
+    <hr class="separador" />
+    <h3 class="need_title main">Dispositivo (Interfaz/tecnología):</h3><h2 class="need_value main">Gadget 6</h2>
+    <h3 class="need_title">Primera Aparición:</h3><p class="need_value"> 58:50</p>
+    <h3 class="need_title">Necesidad:</h3> <p class="need_value">Te mea case deserunt iracundia, id probo iudico lucilius nam. Fugit dolore corrumpit nec ne. Et modus lorem option usu. Duo ex omnes primis voluptua, pri quas vitae propriae ex. At volutpat deseruisse duo, facilis voluptatum ex ius. </p>
+    
+    <iframe  class="media" src="https://www.youtube.com/embed/yHGODp0b8Ks" frameborder="0" allowfullscreen></iframe>
+  </div>
+  
+  <div class="need">
+    <hr class="separador" />
+    <h3 class="need_title main">Dispositivo (Interfaz/tecnología):</h3><h2 class="need_value main">Gadget 7</h2>
+    <h3 class="need_title">Primera Aparición:</h3><p class="need_value"> 1:01:45</p>
+    <h3 class="need_title">Necesidad:</h3> <p class="need_value">Eam oporteat expetendis sadipscing no, eum ferri denique facilisis et. Cu habeo primis quidam sit, nam ex ipsum putent feugiat. Eos at eros vide complectitur, ei sale facer error mel. Ius exerci appareat an, pri vocent civibus petentium eu. Vim dolore nostrum ut, habeo dolorem nec ut. </p>
+    
+    <iframe  class="media" src="https://www.youtube.com/embed/J6k76vuw9Rk" frameborder="0" allowfullscreen></iframe>
+  </div>
+  
+  
+  <p><div class="to_top"><a href="#top">▲</a></div></p>
+  
+</div><!--fin necesidades-->
 
+
+<!--Tecnologías-->
+<div class="section" id="Tecnologias">
+  <h2 class="section_title">Tecnologías involucradas</h2>
+  <p class="section_text">Alii mollis commune te ius. Sed id augue nullam delicata, in praesent repudiare qui. Cu brute partem aperiam vim. Vel hinc integre facilisis ea, vix idque invidunt insolens an. Per elit labore concludaturque no, ex per melius recteque.
+</p> 
+  
+  <!-- Se deben hacer referencias cruzadas con la bibliografía o recursos en 
+  internet utilizados para realizar el análisis. Para ello se usará un identificador
+  en la lista de referencias de la forma: id = "refX", donde X es un número secuencial
+  y en el texto se incluirá la referencia cruzada, de la siguiente forma:
+   [<a href="#refX">X</a>]
+  -->
+  <div class="subsection">
+    <h3 class="subsection_title">Tecnologías disponibles en el momento de la producción</h3>
+    <p class="subsection_text">Essent neglegentur disputationi vel eu. Id perfecto consectetuer duo. Aliquip molestie voluptatibus usu eu, nam electram prodesset ea, vix quis eius ocurreret in. Malis expetendis nec ex, cum posse voluptua antiopam [<a href="#ref1">1</a>] ei. Ne pri dicit debitis, ea cum dicat prodesset eloquentiam, quo te solum graecis habemus.</p> 
+  </div>
+  
+  <div class="subsection">
+    <h3 class="subsection_title">Tecnologías imaginadas en el momento de la producción</h3>
+    <p class="section_text">Nec at saepe epicuri ocurreret. Oportere reprehendunt his ne, inani aliquando ex per. Ignota animal integre ut sit, ius [<a href="#ref2">2</a>] cu nonumes partiendo. Sea te nulla blandit. Duo at erat perpetua, cu affert probatus menandri sed [<a href="#ref3">3</a>].</p> 
+  </div>
+  <p><div class="to_top"><a href="#top">▲</a></div></p>
+</div><!--fin tecnologías-->
+
+
+<!--Impacto-->
+<div class="section" id="Impacto">
+  <h2 class="section_title">Impacto</h2>
+  <p class="section_text">Duo ex alienum platonem reprimique, pri ne quas augue. Id sea solum graeco, te quo eligendi aliquando voluptatum, autem virtute labores ei has. Ut vim omnium integre copiosae, harum menandri corrumpit per ut. Duo ei saepe iriure animal.
+  </p>
+  <p class="section_text">Te usu modo maiorum fabellas, vix in meis recusabo sadipscing. Et tractatos adolescens voluptaria has, eum postea assentior te. At soluta nominati mel. Et est causae oporteat evertitur, cu fugit nonumy adipiscing quo. Sea ex diam oblique persius, sed semper vituperata ex.</p>
+  <p class="section_text">Sit quot volumus neglegentur cu. Ut mel perfecto salutatus urbanitas, justo nostrum ei eos. At vocent eligendi inimicus vix, illud saperet ex mei. Per eu causae apeirian. Quodsi deseruisse definiebas mea cu, magna suscipiantur has te, at pri erant option scaevola.</p>
+
+  <p><div class="to_top"><a href="#top">▲</a></div></p>
+</div>
+
+
+<!--Referencias-->
+<div class="section" id="Referencias">
+  <h3 class="section_title">Referencias</h3>
+  
+  <ol class="referencias">
+   
+    <li id="ref1">
+      <span class="autor">Wikipedia</span>,
+      <span class="titulo">Fictitious references</span>,
+      <span class="link"><a href="https://en.wikipedia.org/wiki/Wikipedia:Fictitious_references">https://en.wikipedia.org/wiki/Wikipedia:Fictitious_references</a></span>,
+      <span class="visita">(última visita: 6 febrero de 2017)</span>
+    </li>
+    
+    
+    <li id="ref2">
+      <span class="autor">HowTo</span>,
+      <span class="titulo">Make a Fake Bibliography</span>,
+      <span class="link"><a href="http://uncyclopedia.wikia.com/wiki/HowTo:Make_a_Fake_Bibliography/">http://uncyclopedia.wikia.com/wiki/HowTo:Make_a_Fake_Bibliography</a></span>,
+      <span class="visita">(última visita: 6 febrero de 2017)</span>
+    </li>
+
+    <li id="ref3">
+      <span class="autor">Tim Crawford, </span>,
+      <span class="titulo">Reference Generator</span>,
+      <span class="link"><a href="https://www.qub.ac.uk/cite2write/harvard3l.html">https://www.qub.ac.uk/cite2write/harvard3l.html</a></span>,
+      <span class="visita">(última visita: 6 febrero de 2017)</span>
+    </li>
+    
+    
+  </ol> 
+  <p><div class="to_top"><a href="#top">▲</a></div></p>  
+</div>
 </body>
-
-
 </html>
-<!-- random-length HTML comment: xSDYoF28h9roVyDp7ebdsKqfEcBFFKe3cgRHjHDGGssbgvEcQe38ojeqBdwHnO8EuNJTUMXY2FzXz2zDWq98PboO5YVgnRkVernw1AKuE8H1y64Kk3IzVuDOJXuuoTFHAs32rEmvAtkyne6NXCAqwD43YnnB6rI6XBwC -->
+
+
